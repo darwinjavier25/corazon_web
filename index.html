@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazón Animado</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            display: block;
+        }
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 8px 16px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #f50057;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="heartCanvas"></canvas>
+    <div class="controls">
+        <button id="startBtn">Iniciar</button>
+        <button id="resetBtn">Reiniciar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
